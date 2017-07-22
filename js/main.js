@@ -180,37 +180,39 @@
 
         //Contact Form
         //Form Validator and Ajax Sender
-        $("#contactForm").validate({
+        $("#contactForm").validate(
+        {
           submitHandler: function(form) {
-            $.ajax({
-              type: "POST",
-              url: "php/contact-form.php",
-              data: {
-                "name": $("#contactForm #name").val(),
-                "email": $("#contactForm #email").val(),
-                "events": $("#contactForm #events").val(),
-                "guests": $("#contactForm #guests").val(),
-                "message": $("#contactForm #message").val()
-              },
-              dataType: "json",
-              success: function (data) {
-                if (data.response == "success") {
-                  $('#contactWait').hide();
-                  $("#contactSuccess").fadeIn(300).addClass('modal-show');
-                  //$("#contactError").addClass("hidden");  
-                  //$("#contactForm #name, #contactForm #email, #contactForm #events, #contactForm #guests, #contactForm #message")
-                    //.val("")
-                    //.blur();         
-                } else {
-                  $('#contactWait').hide();
-                  $("#contactError").fadeIn(300).addClass('modal-show');
-                  $("#contactSuccess").addClass("hidden");
-                }
-              },
-              beforeSend: function() {
-                $('#contactWait').fadeIn(200);
-              }
-            });
+            emailjs.send("gmail","template_UmTrEypn",{from_name: "James", to_name: "Check this out!", message_html: "Check this out!"});
+        //     $.ajax({
+        //       type: "POST",
+        //       url: "php/contact-form.php",
+        //       data: {
+        //         "name": $("#contactForm #name").val(),
+        //         "email": $("#contactForm #email").val(),
+        //         "events": $("#contactForm #events").val(),
+        //         "guests": $("#contactForm #guests").val(),
+        //         "message": $("#contactForm #message").val()
+        //       },
+        //       dataType: "json",
+        //       success: function (data) {
+        //         if (data.response == "success") {
+        //           $('#contactWait').hide();
+        //           $("#contactSuccess").fadeIn(300).addClass('modal-show');
+        //           //$("#contactError").addClass("hidden");  
+        //           //$("#contactForm #name, #contactForm #email, #contactForm #events, #contactForm #guests, #contactForm #message")
+        //             //.val("")
+        //             //.blur();         
+        //         } else {
+        //           $('#contactWait').hide();
+        //           $("#contactError").fadeIn(300).addClass('modal-show');
+        //           $("#contactSuccess").addClass("hidden");
+        //         }
+        //       },
+        //       beforeSend: function() {
+        //         $('#contactWait').fadeIn(200);
+        //       }
+        //     });
           }
         });
 
