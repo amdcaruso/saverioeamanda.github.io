@@ -1330,7 +1330,7 @@ a:focus {
 ! 03. Header
 ========================================================== */
 .site-content-padding {
-  padding-top: 140px;
+  padding-top: 120px;
 }
 #masthead {
   position: fixed;
@@ -1340,9 +1340,11 @@ a:focus {
   padding: 15px 0;
   z-index: 10;
   background-color: rgba(208, 88, 73, 0.83);
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
 }
 #masthead .header-logo {
   width: 170px;
@@ -1355,13 +1357,13 @@ a:focus {
 }
 @media (min-width:992px) {
   #masthead .header-logo {
-    width: 314px;
+    width: 250px;
     margin-top: 0;
   }
 }
 #masthead .header-logo .site-title {
   margin-bottom: 0;
-  font-size: 36px;
+  font-size: 23px;
   line-height: 1;
   margin-top: 12px;
   font-weight: regular;
@@ -1376,7 +1378,7 @@ a:focus {
 }
 @media (min-width:992px) {
   #masthead .header-logo .site-title {
-    font-size: 46px;
+    font-size: 21px;
   }
 }
 #masthead .header-logo .site-title a {
@@ -1384,7 +1386,7 @@ a:focus {
 }
 #masthead .header-logo .site-description {
   color: #ffffff;
-  opacity: 0.8;
+  opacity: 1;
 }
 #masthead .header-logo p {
   margin: 0;
@@ -1404,7 +1406,7 @@ a:focus {
 }
 #masthead.header-stick {
   background-color: #d75a4a;
-  opacity: 0.9;
+  opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -1560,7 +1562,7 @@ a:focus {
   padding-bottom: 8px;
 }
 .navbar-default .navbar-nav .dropdown-menu a:hover {
-  background: #c64939;
+  /*background: #c64939;*/
 }
 /* ==========================================================
 ! 04. Footer
@@ -1774,14 +1776,19 @@ a:focus {
 .main-carousel .slide-title {
   font-family: 'Great Vibes', sans-serif;
   font-family: 'Great Vibes', cursive;
-  font-size: 60px;
+  font-size: 40px;
   color: #ffffff;
   position: relative;
   margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .main-carousel .slide-title {
-    font-size: 80px;
+    font-size: 40px;
+     text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
   }
   .main-carousel .slide-title:before,
   .main-carousel .slide-title:after {
@@ -1906,12 +1913,16 @@ a:focus {
   border-radius: 50%;
   width: 110px;
   height: 110px;
-  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.12);
   padding-top: 28px;
   margin: 15px;
   text-align: center;
   display: inline-block;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 @media (min-width: 768px) {
   .bearr-countdown-item .countdown-col {
