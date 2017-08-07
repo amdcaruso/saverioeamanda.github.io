@@ -22,7 +22,7 @@
     $(window).on("load", function () {    
 
         //loader and Intro Animations
-        $('#page-loader').delay(800).fadeOut(400, function(){});    
+        $('#page-loader').delay(600).fadeOut(400, function(){});    
 
         // Calling functions here
         adjustViewport();
@@ -38,18 +38,18 @@
     //Begin - Document Ready
     $(document).on("ready", function () {    
 
-        //WAYPOINTS
-        $('#content').waypoint(function (direction) {
-            if (direction === 'down') {
-                $('#masthead').addClass('header-stick');
-                $('#back-to-top').removeClass('back-to-top-hide');
-            } else {
-                $('#masthead').removeClass('header-stick');
-                $('#back-to-top').addClass('back-to-top-hide');
-            }
-        }, {
-            offset: '-20px'
-        });
+        // //WAYPOINTS
+        // $('#content').waypoint(function (direction) {
+        //     if (direction === 'down') {
+        //         $('#masthead').addClass('header-stick');
+        //         $('#back-to-top').removeClass('back-to-top-hide');
+        //     } else {
+        //         $('#masthead').removeClass('header-stick');
+        //         $('#back-to-top').addClass('back-to-top-hide');
+        //     }
+        // }, {
+        //     offset: '-20px'
+        // });
 
         //Bootstrap menu on hover 
         $('.dropdown').on('mouseenter', function () {
@@ -183,7 +183,7 @@
         $("#contactForm").validate(
         {
           submitHandler: function(form) {
-            emailjs.send("gmail","template_UmTrEypn",{from_name: "James", to_name: "Check this out!", message_html: "Check this out!"});
+            emailjs.send("gmail","template_UmTrEypn",{from_name: $("#contactForm #name").val(), to_name: $("#contactForm #email").val(), message_html: $("#contactForm #message").val()});
         //     $.ajax({
         //       type: "POST",
         //       url: "php/contact-form.php",
