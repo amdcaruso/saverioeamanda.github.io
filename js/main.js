@@ -22,12 +22,11 @@
     $(window).on("load", function () {    
 
         //loader and Intro Animations
-        $('#page-loader').delay(600).fadeOut(400, function(){});    
+        $('#page-loader').delay(100).fadeOut(50, function(){});    
 
         // Calling functions here
         adjustViewport();
         AdjustingBannerSpacing();
-
     });
 
     //Runs on window Resize
@@ -39,17 +38,17 @@
     $(document).on("ready", function () {    
 
         // //WAYPOINTS
-        // $('#content').waypoint(function (direction) {
-        //     if (direction === 'down') {
-        //         $('#masthead').addClass('header-stick');
-        //         $('#back-to-top').removeClass('back-to-top-hide');
-        //     } else {
-        //         $('#masthead').removeClass('header-stick');
-        //         $('#back-to-top').addClass('back-to-top-hide');
-        //     }
-        // }, {
-        //     offset: '-20px'
-        // });
+        $('#content').waypoint(function (direction) {
+            if (direction === 'down') {
+                $('#masthead').addClass('header-stick');
+                $('#back-to-top').removeClass('back-to-top-hide');
+            } else {
+                $('#masthead').removeClass('header-stick');
+                $('#back-to-top').addClass('back-to-top-hide');
+            }
+        }, {
+            offset: '-20px'
+        });
 
         //Bootstrap menu on hover 
         $('.dropdown').on('mouseenter', function () {
@@ -184,35 +183,6 @@
         {
           submitHandler: function(form) {
             emailjs.send("gmail","template_UmTrEypn",{from_name: $("#contactForm #name").val(), to_name: $("#contactForm #email").val(), message_html: $("#contactForm #message").val()});
-        //     $.ajax({
-        //       type: "POST",
-        //       url: "php/contact-form.php",
-        //       data: {
-        //         "name": $("#contactForm #name").val(),
-        //         "email": $("#contactForm #email").val(),
-        //         "events": $("#contactForm #events").val(),
-        //         "guests": $("#contactForm #guests").val(),
-        //         "message": $("#contactForm #message").val()
-        //       },
-        //       dataType: "json",
-        //       success: function (data) {
-        //         if (data.response == "success") {
-        //           $('#contactWait').hide();
-        //           $("#contactSuccess").fadeIn(300).addClass('modal-show');
-        //           //$("#contactError").addClass("hidden");  
-        //           //$("#contactForm #name, #contactForm #email, #contactForm #events, #contactForm #guests, #contactForm #message")
-        //             //.val("")
-        //             //.blur();         
-        //         } else {
-        //           $('#contactWait').hide();
-        //           $("#contactError").fadeIn(300).addClass('modal-show');
-        //           $("#contactSuccess").addClass("hidden");
-        //         }
-        //       },
-        //       beforeSend: function() {
-        //         $('#contactWait').fadeIn(200);
-        //       }
-        //     });
           }
         });
 
