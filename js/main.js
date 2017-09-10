@@ -8,9 +8,9 @@
     
     function checksLanguage(language) {
         if (language.indexOf('en') > -1) {
-            document.location.href = 'https://saverioeamanda.github.io/';
+            window.location.href = 'https://saverioeamanda.github.io/';
         } else {
-            document.location.href = 'https://saverioeamanda.github.io/pt.html';
+            window.location.href = 'https://saverioeamanda.github.io/pt.html';
         }
     }
     
