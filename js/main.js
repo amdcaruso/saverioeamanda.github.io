@@ -4,6 +4,14 @@
 
     var windowHeight = $(window).height();
 
+    var language = navigator.language || navigator.browserLanguage;
+    console.log(language);
+    if (language.indexOf('en') > -1) {
+        document.location.href = 'https://saverioeamanda.github.io/';
+    } else {
+        document.location.href = 'https://saverioeamanda.github.io/pt.html';
+    }
+
     function adjustViewport() {
         windowHeight = $(window).height();
         $('.viewport').css('min-height', windowHeight);
