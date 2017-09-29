@@ -14,8 +14,6 @@
         }
     }
     
-    document.addEventListener('touchstart', onTouchStart, {passive: true});
-    
     function adjustViewport() {
         windowHeight = $(window).height();
         $('.viewport').css('min-height', windowHeight);
@@ -48,7 +46,8 @@
 
     //Begin - Document Ready
     $(document).on("ready", function () {    
-
+        
+        document.addEventListener('touchstart', onTouchStart, {passive: true});
         // //WAYPOINTS
         $('#content').waypoint(function (direction) {
             if (direction === 'down') {
