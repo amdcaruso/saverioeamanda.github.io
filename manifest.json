@@ -1,5 +1,14 @@
 {
     "short_name": "Svrioamnd",
     "name": "Amanda and Saverio",
+    "theme_color": "#21759b",
+    "background_color": "#f1f1f1",
+    "icons": [
+        {
+          "src": "favicon.ico",
+          "type": "image/png",
+          "sizes": "16x16"
+        }],
+    "orientation": "portrait",
     "start_url": "index.html?launcher=true"
   }
