@@ -47,7 +47,10 @@
     //Begin - Document Ready
     $(document).on("ready", function () {    
         
-        document.addEventListener('touchstart', onTouchStart, {passive: true});
+        $('.touchelement').bind({'touchstart':function(e){
+            console.info(e.originalEvent.touches[0]);
+          }});
+          
         // //WAYPOINTS
         $('#content').waypoint(function (direction) {
             if (direction === 'down') {
