@@ -14,6 +14,8 @@
         }
     }
     
+    document.addEventListener('touchstart', onTouchStart, {passive: true});
+    
     function adjustViewport() {
         windowHeight = $(window).height();
         $('.viewport').css('min-height', windowHeight);
