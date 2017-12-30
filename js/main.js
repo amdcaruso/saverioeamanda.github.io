@@ -8,9 +8,9 @@
     
     function checksLanguage(language) {
         if (language.indexOf('en') > -1) {
-            window.location.href = 'https://saverioeamanda.github.io/';
+            window.location.href = 'http://www.saverioeamanda/';
         } else {
-            window.location.href = 'https://saverioeamanda.github.io/pt.html';
+            window.location.href = 'http://saverioeamanda.com/pt.html';
         }
     }
     
@@ -193,12 +193,12 @@
 
         //Contact Form
         //Form Validator and Ajax Sender
-        $("#contactForm").validate(
-        {
-          submitHandler: function(form) {
-            emailjs.send("gmail","template_UmTrEypn",{from_name: $("#contactForm #name").val(), to_name: $("#contactForm #email").val(), message_html: $("#contactForm #message").val()});
-          }
-        });
+        // $("#contactForm").validate(
+        // {
+        //   submitHandler: function(form) {
+        //     emailjs.send("gmail","template_UmTrEypn",{from_name: $("#contactForm #name").val(), to_name: $("#contactForm #email").val(), message_html: $("#contactForm #message").val()});
+        //   }
+        // });
 
         //Modal for Contact Form
         var modalWrap = $('.modal-wrap');
