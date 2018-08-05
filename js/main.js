@@ -30,13 +30,13 @@
 
   $(".loading-wrapper")
     .css({ visibility: "visible" })
-    .animate({ opacity: "1" }, 600);
+    .animate({ opacity: "1" }, 400);
 
   //Begin - Window Load
   $(window).on("load", function() {
     //loader and Intro Animations
     $("#page-loader")
-      .delay(100)
+      .delay(60)
       .fadeOut(50, function() {});
 
     // Calling functions here

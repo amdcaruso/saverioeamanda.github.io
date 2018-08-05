@@ -3,6 +3,7 @@
     "name": "Amanda and Saverio",
     "theme_color": "#21759b",
     "background_color": "#f1f1f1",
+    "display": "fullscreen",
     "icons": [
         {
           "src": "favicon2.ico",
