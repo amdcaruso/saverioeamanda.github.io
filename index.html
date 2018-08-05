@@ -4,99 +4,110 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta property="og:image"           content="http://i.imgur.com/vIjoKtZ.jpg" /> 
-  <meta property="og:image:secure_url"           content="https://i.imgur.com/vIjoKtZ.jpg" />
-  <meta property="og:image:type"            content="image/jpeg" />  
-  <meta property="og:image:width"           content="1200" /> 
-  <meta property="og:image:height"           content="630" /> 
+  <meta property="og:image" content="http://i.imgur.com/vIjoKtZ.jpg" />
+  <meta property="og:image:secure_url" content="https://i.imgur.com/vIjoKtZ.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Resolver" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Amanda & Saverio</title>
 
-    <!-- Favicons
+  <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
-    <link rel="icon" href="favicon2.ico" type="image/x-icon">
-    <!-- / Favicons
+  <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
+  <link rel="icon" href="favicon2.ico" type="image/x-icon">
+  <!-- / Favicons
     ================================================== -->
 
-    <!-- >> CSS
+  <!-- >> CSS
     ============================================================================== -->
-    <!-- Bootstrap styles -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- /Bootstrap Styles -->
-    <!-- owl carousel -->
-    <link href="vendor/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
-    <link href="vendor/owl.carousel/assets/owl.theme.default.min.css" rel="stylesheet">
-    <!-- /owl carousel -->
-    <!-- fancybox.css -->
-    <link href="vendor/animate.css" rel="stylesheet">
-    <!-- /fancybox.css -->
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <!-- /Font Awesome -->
-    <!-- Simple Lightbox -->
-    <link rel="stylesheet" href="vendor/simplelightbox/dist/simplelightbox.min.css">    
-    <!-- /Simple Lightbox -->
-    <!-- Main Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="manifest" href="/manifest.json">
+  <!-- Bootstrap styles -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- /Bootstrap Styles -->
+  <!-- owl carousel -->
+  <link href="vendor/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+  <link href="vendor/owl.carousel/assets/owl.theme.default.min.css" rel="stylesheet">
+  <!-- /owl carousel -->
+  <!-- fancybox.css -->
+  <link href="vendor/animate.css" rel="stylesheet">
+  <!-- /fancybox.css -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- /Font Awesome -->
+  <!-- Simple Lightbox -->
+  <link rel="stylesheet" href="vendor/simplelightbox/dist/simplelightbox.min.css">
+  <!-- /Simple Lightbox -->
+  <!-- Main Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
 
-    <!-- /Main Styles -->
-    <!-- >> /CSS
+  <!-- /Main Styles -->
+  <!-- >> /CSS
     ============================================================================== -->
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-     (function(){
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
       emailjs.init("user_rAQF0480CwRFItIegB7Q3");
     })();
   </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').then(function (registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106652534-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)};
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106652534-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments) };
+    gtag('js', new Date());
 
-  gtag('config', 'UA-106652534-1');
-</script>
+    gtag('config', 'UA-106652534-1');
+  </script>
 </head>
 
 <body>
-<!-- Page Loader
+  <!-- Page Loader
   ========================================================= -->
-  <div class="loader" id="page-loader"> 
+  <div class="loader" id="page-loader">
     <div class="loading-wrapper">
       <div class="loader-heart loader-heart1"></div>
       <div class="loader-heart loader-heart2"></div>
       <div class="loader-heart loader-heart3"></div>
-    </div>   
+    </div>
   </div>
-<!-- /End of Page loader
+  <!-- /End of Page loader
   ========================================================= -->
-<!-- Header
+  <!-- Header
   ================================================== -->
-  <header id="masthead" class="site-header" >    
+  <header id="masthead" class="site-header">
     <!-- Main header -->
-    <div class="container">     
+    <div class="container">
       <!-- Navbar Header -->
       <div class="row">
 
         <!-- Main Navigation -->
         <div class="col-xs-12">
 
-          <nav class="navbar navbar-default" > 
+          <nav class="navbar navbar-default">
 
-            <!-- Brand and toggle get grouped for better mobile display --> 
-            <div class="navbar-header"> 
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
               <!-- Mobile Menu Button -->
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
-                <span class="sr-only">Toggle navigation</span> 
-                <span class="icon-bar"></span> 
-                <span class="icon-bar"></span> 
-                <span class="icon-bar"></span> 
-              </button> 
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
               <!-- /Mobile Menu Button -->
 
               <!-- Logo -->
@@ -105,509 +116,583 @@
                   <a href="index.html" rel="home">Amanda &amp; Saverio</a>
                   <br>
                   <a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;07.09.2018</a>
-                </p>                                
-              </div> 
+                </p>
+              </div>
               <!-- /logo -->
-            </div> 
-            <!-- / Brand and toggle --> 
+            </div>
+            <!-- / Brand and toggle -->
 
-            <!-- Navigation --> 
-            <div class="collapse navbar-collapse"> 
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li><a title="Story" href="index.html#special-events">Location</a></li>
-                <li><a title="Story" href="index.html#rsvp">FAQ</a></li>
-                <li><a title="Story" href="index.html#wedding-bio">About Us</a></li>
-                <li><a title="Story" href="index.html#story">Agenda</a></li>
-                <li><a title="Story" href="index.html#gallery">Gallery</a></li>
-                <li><a title="Story" href="index.html#gifts">Gifts</a></li>
+                <li>
+                  <a title="Story" href="index.html#special-events">Location</a>
+                </li>
+                <li>
+                  <a title="Story" href="index.html#rsvp">FAQ</a>
+                </li>
+                <li>
+                  <a title="Story" href="index.html#wedding-bio">About Us</a>
+                </li>
+                <li>
+                  <a title="Story" href="index.html#story">Agenda</a>
+                </li>
+                <li>
+                  <a title="Story" href="index.html#gallery">Gallery</a>
+                </li>
+                <li>
+                  <a title="Story" href="index.html#gifts">Gifts</a>
+                </li>
                 <!-- <li><a title="Story" href="archive.html">Blog</a></li>  -->
-              </ul>                           
-            </div>                      
+              </ul>
+            </div>
             <!-- /navigation -->
           </nav>
         </div>
-        <!-- Main Navigation -->    
-      </div> 
-      <!-- /Navbar Header -->  
+        <!-- Main Navigation -->
+      </div>
+      <!-- /Navbar Header -->
     </div>
     <!-- /Main header -->
   </header>
-<!-- / Header
+  <!-- / Header
   ================================================== -->
 
-<!-- Main Content
+  <!-- Main Content
   ================================================== -->
   <div id="content" class="site-content">
     <div id="primary" class="">
 
       <!-- SECTION: Slideshow -->
       <div class="section-slideshow" id="slideshow">
-       <div class="owl-carousel main-carousel owl-theme">
-        <!-- Slide -->
-        <div class="featured-slide slide bg-cover viewport" style="background-image: url('img/home-banner-slide1.jpg.webp');">
-          <div class="slide-inner">
-            <div class="slide-extra">
-              <!-- countdown (edit date on main.js file)-->
-              <h1 class="slide-title active">In</h1>
-              <div class="bearr-countdown-wrapper">
-                <div id="bearr-countdown-item" class="bearr-countdown-item"></div>
+        <div class="owl-carousel main-carousel owl-theme">
+          <!-- Slide -->
+          <div class="featured-slide slide bg-cover viewport" style="background-image: url('img/home-banner-slide1.jpg.webp');">
+            <div class="slide-inner">
+              <div class="slide-extra">
+                <!-- countdown (edit date on main.js file)-->
+                <h1 class="slide-title active">In</h1>
+                <div class="bearr-countdown-wrapper">
+                  <div id="bearr-countdown-item" class="bearr-countdown-item"></div>
+                </div>
+                <!-- /countdown -->
               </div>
-              <!-- /countdown -->
-            </div>
-            <div class="slide-icon active"></div>
-            <h1 class="slide-title active">Saverio and Amanda are getting married! <3</h1>
-            <p class="slide-text active"></p>
+              <div class="slide-icon active"></div>
+              <h1 class="slide-title active">Saverio and Amanda are getting married!
+                <3</h1>
+                  <p class="slide-text active"></p>
 
+            </div>
+          </div>
+          <!-- /Slide -->
+        </div>
+      </div>
+      <!-- /SECTION: Slideshow -->
+
+      <!-- SECTION: Events -->
+      <div class="section with-dark-bg section-events" id="special-events" style="background-image: url('img/special-event-bg.jpg.webp');">
+        <div class="container">
+
+          <!-- Section Title -->
+          <div class="title-section-wrapper">
+            <!-- Title -->
+            <h2 class="title-section">LOCATION</h2>
+            <!-- /title -->
+            <!-- Text -->
+            <p class="text-section">Below you can find information of where the cerimony and the party will take place. Don't worry we will provide
+              our guests with a bus from the church to the wedding party. (They are about 30 minutes away)</p>
+            <!-- /text -->
+          </div>
+          <!-- /Section Title -->
+          <!-- row -->
+          <div class="row">
+            <!-- col -->
+            <div class="col-sm-6">
+              <!-- Event Item -->
+              <div class="events-reminder-item">
+                <header>
+                  <h3 class="events-item-heading">Chiesa Maria SS. del Rosario </h3>
+                </header>
+                <div class="events-item-content">
+                  <ul>
+                    <li>
+                      <span class="events-reminder-item-icon events-reminder-item-icon-time"></span>
+                      <span class="events-reminder-time-content">16:00 PM</span>
+                    </li>
+                    <li>
+                      <span class="events-reminder-item-icon events-reminder-item-icon-date"></span>
+                      <span class="events-reminder-date-content">Friday 07 - September, 2018</span>
+                    </li>
+                    <li>
+                      <span class="events-reminder-item-icon events-reminder-item-icon-address"></span>
+                      <span class="events-reminder-date-address">Via IV Novembre, Pomigliano d'Arco NA, Italy</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /Event Item -->
+            </div>
+            <!-- /col -->
+            <!-- col -->
+            <div class="col-sm-6">
+              <!-- Event Item -->
+              <div class="events-reminder-item">
+                <header>
+                  <h3 class="events-item-heading">WEDDING PARTY</h3>
+                </header>
+                <div class="events-item-content">
+                  <ul>
+                    <li>
+                      <span class="events-reminder-item-icon events-reminder-item-icon-time"></span>
+                      <span class="events-reminder-time-content">18:00 PM</span>
+                    </li>
+                    <li>
+                      <span class="events-reminder-item-icon events-reminder-item-icon-date"></span>
+                      <span class="events-reminder-date-content">Friday 07 - September, 2018</span>
+                    </li>
+                    <li>
+                      <span class="events-reminder-item-icon events-reminder-item-icon-address"></span>
+                      <span class="events-reminder-date-address">Kora - Via Miliscola, 181 - Lucrino - Pozzuoli - Napoli</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /Event Item -->
+            </div>
+            <!-- /col -->
+            <div class="col-sm-6 col-sm-push-3">
+              <figure class="wedding-bio-image">
+                <img src="img/pt_how_arrive.png.webp" alt="how to arrive" class="responsive-image">
+              </figure>
+            </div>
+          </div>
+          <!-- /row -->
+        </div>
+      </div>
+      <!-- / SECTION: Events -->
+
+      <!-- SECTION: Wedding Bio -->
+      <div class="section section-wedding-bio" id="wedding-bio-title">
+        <div class="container">
+          <div class="col-md-10-offset-2">
+            <!-- Section Title -->
+            <div class="title-section-wrapper">
+              <!-- Title -->
+              <h2 class="title-section">She and He</h2>
+              <!-- /title -->
+              <!-- Text -->
+              <p class="text-section">We are eager to have you with us on our special day!</p>
+              <!-- /text -->
+            </div>
+            <!-- /Section Title -->
+
+            <!-- Wedding Bio -->
+            <div class="row wedding-bio-wrapper">
+              <!-- Wedding Bio Item -->
+              <div class="col-md-4 col-md-offset-2">
+                <div class="wedding-bio-item wedding-bio-item-bride">
+                  <!-- Picture -->
+                  <figure class="wedding-bio-image">
+                    <img src="img/about-item-img.jpg.webp" alt="about-item" class="responsive-image">
+                  </figure>
+                  <!-- / Picture -->
+                  <div class="wedding-bio-content">
+                    <!-- name -->
+                    <h2 class="heading wedding-bio-title">
+                      <span>AMANDA</span>CAVALLARO</h2>
+                    <!-- /Name -->
+                    <!-- Description -->
+                    <div class="wedding-bio-text">
+                      <p>Software Developer, Brazilian, loves to watch dramas and organise and attend tech events. Her favourite
+                        writer is Ernest Cline.</p>
+                    </div>
+                    <!-- /Description -->
+                  </div>
+                </div>
+              </div>
+              <!-- / Wedding Bio Item -->
+              <!-- Wedding Bio Item -->
+              <div class="col-md-4">
+                <div class="wedding-bio-item wedding-bio-item-groom">
+                  <figure class="wedding-bio-image">
+                    <img src="img/about-item-img2.jpg.webp" alt="about-item-img2" class="responsive-image">
+                  </figure>
+                  <div class="wedding-bio-content">
+                    <h2 class="heading wedding-bio-title">
+                      <span>SAVERIO</span>TERRACCIANO</h2>
+                    <div class="wedding-bio-text">
+                      <p>Software Developer, Italian, loves to cook, manga and comics lover, grammar nazi and video games addict.
+                        His favourite writer is Isaac Asimov.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- / Wedding Bio Item -->
+            </div>
+            <!-- /Wedding Bio -->
           </div>
         </div>
-        <!-- /Slide -->
       </div>
-    </div>       
-    <!-- /SECTION: Slideshow -->
+      <!-- /SECTION: Wedding Bio -->
 
-    <!-- SECTION: Events -->
-    <div class="section with-dark-bg section-events" id="special-events" style="background-image: url('img/special-event-bg.jpg.webp');">
+      <!-- SECTION: Testimonials -->
+      <div class="section section-testimonials-wrapper" style="background-image: url('img/testimonials-bg.jpg.webp');">
+        <div class="container">
+          <!-- Testimonials Carousel -->
+          <div class="section-testimonials text-light">
+            <div class="owl-carousel testimonial-carousel common-carousel owl-theme">
+              <!-- Testimonial Item -->
+              <div class="slide">
+                <div class="testimonial-item">
+                  <!-- TEstimonial Text -->
+                  <p>Some ideas of hotels near the church Chiesa Maria SS. del Rosario, in Pomigliano D'arco - Naples.</p>
+
+                </div>
+                <div class="section section-wedding-bio" id="wedding-bio">
+                  <div class="container">
+                    <div class="col-md-10-offset-2">
+                      <!-- Section Title -->
+                      <div class="title-section-wrapper">
+                      </div>
+                      <!-- /Section Title -->
+                      <!-- Wedding Bio -->
+                      <div class="row wedding-bio-wrapper">
+                        <!-- Wedding Bio Item -->
+                        <a href="http://www.albergoromano.net/">
+                          <div class="col-md-5 col-md-offset-1">
+                            <div class="wedding-bio-item wedding-bio-item-bride">
+                              <!-- Picture -->
+                              <div class="wedding-bio-content">
+                                <!-- name -->
+                                <h2 class="heading wedding-bio-title">
+                                  <span>ALBERGO</span>ROMANO</h2>
+                                <div class="wedding-bio-text">
+                                  <h1>A cosy hostel with breakfast included.</h1>
+                                </div>
+                                <!-- /Description -->
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <!-- / Wedding Bio Item -->
+                        <!-- Wedding Bio Item -->
+                        <a href="http://www.leopardihotel.it/">
+                          <div class="col-md-5">
+                            <div class="wedding-bio-item wedding-bio-item-groom">
+                              <div class="wedding-bio-content">
+                                <h2 class="heading wedding-bio-title">
+                                  <span>LEOPARDI</span>HOTEL</h2>
+                                <div class="wedding-bio-text">
+                                  <h1>A modern, chic and spatious 4-star hotel.</h1>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <!-- / Wedding Bio Item -->
+                      </div>
+                      <!-- /Wedding Bio -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- / Testimonial Item -->
+              <!-- Testimonial Item -->
+              <!-- / Testimonial Item -->
+            </div>
+          </div>
+          <!-- /Testimonials Carousel -->
+        </div>
+      </div>
+      <!-- /SECTION: Testimonials -->
+
+      <!-- SECTION: Our Story -->
+      <div class="section section-our-story" id="story">
+        <div class="container">
+
+          <!-- Section Title -->
+          <div class="title-section-wrapper">
+            <!-- Title -->
+            <h2 class="title-section">Agenda</h2>
+            <!-- /title -->
+            <!-- Text -->
+            <p class="text-section">What to expect on our big day!</p>
+            <!-- /text -->
+          </div>
+          <!-- /Section Title -->
+
+          <!-- Timeline item -->
+          <div class="row story-wrap ">
+            <!-- Item description -->
+            <div class="col-sm-6" data-match-height="StoryItem">
+              <div class="story-item">
+                <!-- Image -->
+                <div class="story-item-img">
+                  <img src="img/story-img1.jpg.webp" alt="story-img-1" class="responsive-image">
+                </div>
+                <!-- /image -->
+                <!-- content -->
+                <div class="story-item-content">
+                  <h2 class="story-item-title">Church wedding</h2>
+                  <div class="story-text">
+                    <p>There will be the cerimony at Chiesa Maria SS. del Rosario, Via IV Novembre, Pomigliano d'arco NA, Italy
+                      </p>
+                  </div>
+                </div>
+                <!-- /content -->
+              </div>
+            </div>
+            <!-- / Item description -->
+            <!-- Item Date -->
+            <div class="col-sm-6 story-date-wrap" data-match-height="StoryItem">
+              <div class="story-date">
+                <div class="story-time">CHURCH</div>
+              </div>
+            </div>
+            <!-- /item date -->
+          </div>
+          <!-- /Timeline item -->
+
+          <!-- Timeline Item -->
+          <div class="row story-wrap ">
+            <!-- /Item description -->
+            <div class="col-sm-6 col-sm-push-6" data-match-height="StoryItem">
+              <div class="story-item story-item-alt  ">
+                <!-- Item Image -->
+                <div class="story-item-img">
+                  <img src="img/story-img2.jpg.webp" alt="story image 2" class="responsive-image">
+                </div>
+                <!-- /Item image -->
+                <!-- Item Content -->
+                <div class="story-item-content">
+                  <h2 class="story-item-title">FREE BUS</h2>
+                  <div class="story-text">
+                    <p>The couple will provide our guests with free transportation to go to the wedding party.</p>
+                  </div>
+                </div>
+                <!-- /Item Content -->
+              </div>
+            </div>
+            <!-- /Item description -->
+            <!-- item date -->
+            <div class="col-sm-6 story-date-wrap story-date-wrap-alt col-sm-pull-6 " data-match-height="StoryItem">
+              <div class="story-date">
+                <div class="story-time">Free shuttle to the wedding</div>
+              </div>
+            </div>
+            <!-- /item date -->
+          </div>
+          <!-- /Timeline Item -->
+
+
+          <!-- Timeline Item -->
+          <div class="row story-wrap ">
+            <!-- /Item description -->
+            <div class="col-sm-6" data-match-height="StoryItem">
+              <div class="story-item story-item-alt  ">
+                <!-- Item Image -->
+                <div class="story-item-img">
+                  <img src="img/story-img3.jpg.webp" alt="story image 3" class="responsive-image">
+                </div>
+                <!-- /Item image -->
+                <!-- Item Content -->
+                <div class="story-item-content">
+                  <h2 class="story-item-title">Wedding Party</h2>
+                  <div class="story-text">
+                    <p>Kora - Via Miliscola, 181 - Lucrino - Pozzuoli - Napoli</p>
+                  </div>
+                </div>
+                <!-- /Item Content -->
+              </div>
+            </div>
+            <!-- /Item description -->
+            <!-- item date -->
+            <div class="col-sm-6 story-date-wrap" data-match-height="StoryItem">
+              <div class="story-date">
+                <div class="story-time">Wedding party</div>
+              </div>
+            </div>
+            <!-- /item date -->
+          </div>
+          <!-- /Timeline Item -->
+
+        </div>
+      </div>
+      <!-- /SECTION: Our Story -->
+
+
+
+      <!-- Gallery -->
+      <div class="section section-gallery" id="gallery">
+
+        <!-- Section Title -->
+        <div class="title-section-wrapper">
+          <!-- Title -->
+          <h2 class="title-section">Gallery</h2>
+          <!-- /title -->
+          <!-- Text -->
+          <p class="text-section">Some of our photos together.</p>
+          <!-- /text -->
+        </div>
+        <!-- /Section Title -->
+
+        <!-- Gallery Images -->
+        <div class="gallery-images row">
+          <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+            <div class="bearr-gallery-item">
+              <a href="img/gallery-img1.jpg.webp">
+                <img src="img/gallery-img1.jpg.webp" alt="Gallery Image">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+            <div class="bearr-gallery-item">
+              <a href="img/gallery-img2.jpg.webp">
+                <img src="img/gallery-img2.jpg.webp" alt="Gallery Image">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+            <div class="bearr-gallery-item">
+              <a href="img/gallery-img3.jpg.webp">
+                <img src="img/gallery-img3.jpg.webp" alt="Gallery Image">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+            <div class="bearr-gallery-item">
+              <a href="img/gallery-img4.jpg.webp">
+                <img src="img/gallery-img4.jpg.webp" alt="Gallery Image">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+            <div class="bearr-gallery-item">
+              <a href="img/gallery-img5.jpg.webp">
+                <img src="img/gallery-img5.jpg.webp" alt="Gallery Image">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+            <div class="bearr-gallery-item">
+              <a href="img/gallery-img6.jpg.webp">
+                <img src="img/gallery-img6.jpg.webp" alt="Gallery Image">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+            <div class="bearr-gallery-item">
+              <a href="img/gallery-img7.jpg.webp">
+                <img src="img/gallery-img7.jpg.webp" alt="Gallery Image">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 no-space">
+            <div class="bearr-gallery-item">
+              <a href="img/gallery-img8.jpg.webp">
+                <img src="img/gallery-img8.jpg.webp" alt="Gallery Image">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /Gallery Images -->
+      </div>
+      <!-- /Gallery -->
+
+      <!-- Gift List -->
+      <div class="section section-gift-list" id="gifts">
+        <div class="container">
+
+          <!-- Section Title -->
+          <div class="title-section-wrapper">
+            <!-- Title -->
+            <h2 class="title-section">Gift List</h2>
+            <!-- /title -->
+            <!-- Text -->
+            <div class="owl-carousel-wrapper clients-carousel-wrapper">
+              <p class="text-section">Being able to share this time with family and friends is the best gift we could ask for, and your presence
+                is the most important for us. If you would like to give us something extra, instead of gifts we would really
+                appreciate contributions to our savings for the future house. In Italy, it is customary to give money inside
+                an envelope to the spouses on the wedding date. We will leave an envelope and a box where guests can put
+                the money as a gift.</p>
+              <p align=center>
+                <img src='img/client2.png.webp' alt='gift image'></img>
+              </p>
+              <!-- /text -->
+            </div>
+            <!-- /Section Title -->
+
+            <!-- Gift list -->
+          </div>
+        </div>
+        <!-- /Gift list -->
+      </div>
+    </div>
+    <!-- /Gift List -->
+
+    <!-- Blog -->
+    <div class="section section-blog with-bg" id="blog">
       <div class="container">
 
         <!-- Section Title -->
         <div class="title-section-wrapper">
           <!-- Title -->
-          <h2 class="title-section">LOCATION</h2>
+          <h2 class="title-section">Some more information about us.</h2>
           <!-- /title -->
-          <!-- Text -->
-          <p class="text-section">Below you can find information of where the cerimony and the party will take place. Don't worry we will provide our guests with a bus from the church to the wedding party. (They are about 30 minutes away)</p>
-          <!-- /text -->
         </div>
         <!-- /Section Title -->
-        <!-- row -->
-        <div class="row">
-          <!-- col -->
-          <div class="col-sm-6">
-            <!-- Event Item -->
-            <div class="events-reminder-item">
-              <header>
-                <h3 class="events-item-heading">Chiesa Maria SS. del Rosario </h3>
-              </header>
-              <div class="events-item-content">
-                <ul>
-                  <li>
-                    <span class="events-reminder-item-icon events-reminder-item-icon-time"></span><span class="events-reminder-time-content">16:00 PM</span>
-                  </li>
-                  <li>
-                    <span class="events-reminder-item-icon events-reminder-item-icon-date"></span><span class="events-reminder-date-content">Friday 07 - September, 2018</span>
-                  </li>
-                  <li>
-                    <span class="events-reminder-item-icon events-reminder-item-icon-address"></span><span class="events-reminder-date-address">Via IV Novembre, Pomigliano d'Arco NA, Italy</span>
-                  </li>
-                </ul>
+        <!-- Blogroll  -->
+        <div class="owl-carousel-wrapper blogroll-carousel-wrapper">
+          <div class="owl-carousel blogroll-carousel owl-theme owl-loaded">
+            <!-- item -->
+            <div class="blog-item">
+              <!-- <a href="single.html"> -->
+              <figure class="blog-item-img blog-item-img-cover" style=" background-image: url(img/img1-1.jpg)"></figure>
+              <!-- </a> -->
+              <div class="blog-content">
+                <article class="post">
+                  <h3 class="heading">What to do in Italy?</h3>
+                  <p>We share some ideas of what to do in Naples and Rome in Italy.</p>
+                  <a href="https://docs.google.com/spreadsheets/d/1tVdt5bPQ59ge0jXxWCIGw2h_Z-E1Lo3Rsi7PLJw_BhQ/edit#gid=0" class="primary-btn">Click here!</a>
+                </article>
               </div>
             </div>
-            <!-- /Event Item -->
-          </div>
-          <!-- /col -->
-          <!-- col -->
-          <div class="col-sm-6">
-            <!-- Event Item -->
-            <div class="events-reminder-item">
-              <header>
-                <h3 class="events-item-heading">WEDDING PARTY</h3>
-              </header>
-              <div class="events-item-content">
-                <ul>
-                  <li>
-                    <span class="events-reminder-item-icon events-reminder-item-icon-time"></span><span class="events-reminder-time-content">18:00 PM</span>
-                  </li>
-                  <li>
-                    <span class="events-reminder-item-icon events-reminder-item-icon-date"></span><span class="events-reminder-date-content">Friday 07 - September, 2018</span>
-                  </li>
-                  <li>
-                    <span class="events-reminder-item-icon events-reminder-item-icon-address"></span><span class="events-reminder-date-address">Kora - Via Miliscola, 181 - Lucrino - Pozzuoli - Napoli</span>
-                  </li>
-                </ul>
+            <!-- /item -->
+
+            <!-- item -->
+            <div class="blog-item">
+              <!-- <a href="single.html"> -->
+              <figure class="blog-item-img blog-item-img-cover" style=" background-image: url(img/img1-2.jpg)"></figure>
+              <!-- </a> -->
+              <div class="blog-content">
+                <article class="post">
+                  <h3 class="heading">He popped the question</h3>
+                  <p> Amanda spent the entire day getting ready and planning her prom, speech to go accordingly. Little did she
+                    expect that her other half had something planned for her as well.</p>
+                  <!-- <a href="single.html" class="primary-btn">See More</a> -->
+                </article>
               </div>
             </div>
-            <!-- /Event Item -->
-          </div>
-          <!-- /col -->
-          <div class="col-sm-6 col-sm-push-3">
-            <figure class="wedding-bio-image"><img src="img/pt_how_arrive.png.webp" alt="how to arrive" class="responsive-image"></figure>
-          </div>
-        </div>
-        <!-- /row -->
-      </div>
-    </div>
-    <!-- / SECTION: Events -->
-   
-<!-- SECTION: Wedding Bio -->
-<div class="section section-wedding-bio" id="wedding-bio-title">
-  <div class="container">
-    <div class="col-md-10-offset-2">
-      <!-- Section Title -->
-      <div class="title-section-wrapper">
-        <!-- Title -->
-        <h2 class="title-section">She and He</h2>
-        <!-- /title -->
-        <!-- Text -->
-        <p class="text-section">We are eager to have you with us on our special day!</p>
-        <!-- /text -->
-      </div>
-      <!-- /Section Title -->
+            <!-- /item -->
 
-      <!-- Wedding Bio -->
-      <div class="row wedding-bio-wrapper">
-        <!-- Wedding Bio Item -->
-        <div class="col-md-4 col-md-offset-2">
-          <div class="wedding-bio-item wedding-bio-item-bride">
-            <!-- Picture -->
-            <figure class="wedding-bio-image"><img src="img/about-item-img.jpg.webp" alt="about-item" class="responsive-image"></figure>
-            <!-- / Picture -->
-            <div class="wedding-bio-content">
-              <!-- name -->
-              <h2 class="heading wedding-bio-title"><span>AMANDA</span>CAVALLARO</h2>
-              <!-- /Name -->
-              <!-- Description -->
-              <div class="wedding-bio-text">
-                <p>Software Developer, Brazilian, loves to watch dramas and organise and attend tech events. Her favourite writer is Ernest Cline.</p>
-              </div>
-              <!-- /Description -->
-            </div>
-          </div>
-        </div>
-        <!-- / Wedding Bio Item -->
-        <!-- Wedding Bio Item -->
-        <div class="col-md-4">
-          <div class="wedding-bio-item wedding-bio-item-groom">
-            <figure class="wedding-bio-image"><img src="img/about-item-img2.jpg.webp" alt="about-item-img2" class="responsive-image"></figure>
-            <div class="wedding-bio-content">
-              <h2 class="heading wedding-bio-title"><span>SAVERIO</span>TERRACCIANO</h2>
-              <div class="wedding-bio-text">
-                <p>Software Developer, Italian, loves to cook, manga and comics lover, grammar nazi and video games addict. His favourite writer is Isaac Asimov.</p>
+            <!-- item -->
+            <div class="blog-item">
+              <!-- <a href="single.html"> -->
+              <figure class="blog-item-img blog-item-img-cover" style=" background-image: url(img/img1-3.jpg)"></figure>
+              <!-- </a> -->
+              <div class="blog-content">
+                <article class="post">
+                  <h3 class="heading">Big day is almost here</h3>
+                  <p>We will get married and are so excited to have you come from different parts of the world to share this
+                    special day with us in Italy. We are very sure you are going to enjoy the weather and the food.</p>
+                  <!-- <a href="single.html" class="primary-btn">See More</a> -->
+                </article>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- / Wedding Bio Item -->
-      </div>
-      <!-- /Wedding Bio -->
-    </div>
-  </div>   
-</div>
-<!-- /SECTION: Wedding Bio -->
+            <!-- /item -->
 
-<!-- SECTION: Testimonials -->
-<div class="section section-testimonials-wrapper" style="background-image: url('img/testimonials-bg.jpg.webp');">
-  <div class="container">
-    <!-- Testimonials Carousel -->
-    <div class="section-testimonials text-light">
-      <div class="owl-carousel testimonial-carousel common-carousel owl-theme">
-        <!-- Testimonial Item -->
-        <div class="slide">
-          <div class="testimonial-item">
-            <!-- TEstimonial Text -->
-            <p>Some ideas of hotels near the church Chiesa Maria SS. del Rosario, in Pomigliano D'arco - Naples.</p>
-
-          </div>
-          <div class="section section-wedding-bio" id="wedding-bio">
-            <div class="container">
-              <div class="col-md-10-offset-2">
-                <!-- Section Title -->
-                <div class="title-section-wrapper">
-                </div>
-                <!-- /Section Title -->
-                <!-- Wedding Bio -->
-                <div class="row wedding-bio-wrapper">
-                  <!-- Wedding Bio Item -->
-                  <a href="http://www.albergoromano.net/">
-                    <div class="col-md-5 col-md-offset-1">
-                      <div class="wedding-bio-item wedding-bio-item-bride">
-                        <!-- Picture -->
-                        <div class="wedding-bio-content">
-                          <!-- name -->
-                          <h2 class="heading wedding-bio-title"><span>ALBERGO</span>ROMANO</h2>
-                          <div class="wedding-bio-text">
-                            <h1>A cosy hostel with breakfast included.</h1>
-                          </div>
-                          <!-- /Description -->
-                        </div>
-                      </div>
-                    </div></a>
-                    <!-- / Wedding Bio Item -->
-                    <!-- Wedding Bio Item -->
-                    <a href="http://www.leopardihotel.it/">
-                      <div class="col-md-5">
-                        <div class="wedding-bio-item wedding-bio-item-groom">
-                          <div class="wedding-bio-content">
-                            <h2 class="heading wedding-bio-title"><span>LEOPARDI</span>HOTEL</h2>
-                            <div class="wedding-bio-text">
-                              <h1>A modern, chic and spatious 4-star hotel.</h1>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <!-- / Wedding Bio Item -->
-                  </div>
-                  <!-- /Wedding Bio -->
-                </div>
-              </div>   
-            </div>
-          </div>
-          <!-- / Testimonial Item -->   
-          <!-- Testimonial Item -->
-          <!-- / Testimonial Item -->               
-        </div>
-      </div>
-      <!-- /Testimonials Carousel -->
-    </div>
-  </div>
-  <!-- /SECTION: Testimonials -->
-
-  <!-- SECTION: Our Story -->
-  <div class="section section-our-story" id="story">
-    <div class="container">
-
-      <!-- Section Title -->
-      <div class="title-section-wrapper">
-        <!-- Title -->
-        <h2 class="title-section">Agenda</h2>
-        <!-- /title -->
-        <!-- Text -->
-        <p class="text-section">What to expect on our big day!</p>
-        <!-- /text -->
-      </div>
-      <!-- /Section Title -->
-
-      <!-- Timeline item -->
-      <div class="row story-wrap ">
-        <!-- Item description -->
-        <div class="col-sm-6" data-match-height="StoryItem">                        
-          <div class="story-item">
-            <!-- Image -->
-            <div class="story-item-img">
-              <img src="img/story-img1.jpg.webp" alt="story-img-1" class="responsive-image">
-            </div>
-            <!-- /image -->
-            <!-- content -->
-            <div class="story-item-content">
-              <h2 class="story-item-title">Church wedding</h2>
-              <div class="story-text">
-                <p>There will be the cerimony at Chiesa Maria SS. del Rosario, Via IV Novembre, Pomigliano d'arco NA, Italy </p>
-              </div>
-            </div>
-            <!-- /content -->
-          </div>
-      </div>
-      <!-- / Item description -->
-      <!-- Item Date -->
-      <div class="col-sm-6 story-date-wrap" data-match-height="StoryItem">
-        <div class="story-date">
-          <div class="story-time">CHURCH</div>
-        </div>
-      </div>
-      <!-- /item date -->
-    </div>
-    <!-- /Timeline item -->
-
-    <!-- Timeline Item -->
-    <div class="row story-wrap ">
-      <!-- /Item description -->
-      <div class="col-sm-6 col-sm-push-6" data-match-height="StoryItem">
-        <div class="story-item story-item-alt  ">
-          <!-- Item Image -->
-          <div class="story-item-img">
-            <img src="img/story-img2.jpg.webp" alt="story image 2" class="responsive-image">
-          </div>
-          <!-- /Item image -->
-          <!-- Item Content -->
-          <div class="story-item-content">
-            <h2 class="story-item-title">FREE BUS</h2>
-            <div class="story-text">
-              <p>The couple will provide our guests with free transportation to go to the wedding party.</p>
-            </div>
-          </div>
-          <!-- /Item Content -->
-        </div>
-      </div>
-      <!-- /Item description -->
-      <!-- item date -->
-      <div class="col-sm-6 story-date-wrap story-date-wrap-alt col-sm-pull-6 " data-match-height="StoryItem">
-        <div class="story-date">
-          <div class="story-time">Free shuttle to the wedding</div>
-        </div>
-      </div>
-      <!-- /item date -->
-    </div>
-    <!-- /Timeline Item -->
-
-
-    <!-- Timeline Item -->
-    <div class="row story-wrap ">
-      <!-- /Item description -->
-      <div class="col-sm-6" data-match-height="StoryItem">
-        <div class="story-item story-item-alt  ">
-          <!-- Item Image -->
-          <div class="story-item-img">
-            <img src="img/story-img3.jpg.webp" alt="story image 3" class="responsive-image">
-          </div>
-          <!-- /Item image -->
-          <!-- Item Content -->
-          <div class="story-item-content">
-            <h2 class="story-item-title">Wedding Party</h2>
-            <div class="story-text">
-              <p>Kora - Via Miliscola, 181 - Lucrino - Pozzuoli - Napoli</p>
-            </div>
-          </div>
-          <!-- /Item Content -->
-        </div>
-      </div>
-      <!-- /Item description -->
-      <!-- item date -->
-      <div class="col-sm-6 story-date-wrap" data-match-height="StoryItem">
-        <div class="story-date">
-          <div class="story-time">Wedding party</div>
-        </div>
-      </div>
-      <!-- /item date -->
-    </div>
-    <!-- /Timeline Item -->            
-
-  </div>
-</div>
-<!-- /SECTION: Our Story -->
-
-
-
-<!-- Gallery -->
-<div class="section section-gallery" id="gallery">
-
-  <!-- Section Title -->
-  <div class="title-section-wrapper">
-    <!-- Title -->
-    <h2 class="title-section">Gallery</h2>
-    <!-- /title -->
-    <!-- Text -->
-    <p class="text-section">Some of our photos together.</p>
-    <!-- /text -->
-  </div>
-  <!-- /Section Title -->
-
-  <!-- Gallery Images -->
-  <div class="gallery-images row">
-    <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-      <div class="bearr-gallery-item"><a href="img/gallery-img1.jpg.webp"><img src="img/gallery-img1.jpg.webp" alt="Gallery Image"></a></div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-      <div class="bearr-gallery-item"><a href="img/gallery-img2.jpg.webp"><img src="img/gallery-img2.jpg.webp" alt="Gallery Image"></a></div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-      <div class="bearr-gallery-item"><a href="img/gallery-img3.jpg.webp"><img src="img/gallery-img3.jpg.webp" alt="Gallery Image"></a></div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-      <div class="bearr-gallery-item"><a href="img/gallery-img4.jpg.webp"><img src="img/gallery-img4.jpg.webp" alt="Gallery Image"></a></div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-      <div class="bearr-gallery-item"><a href="img/gallery-img5.jpg.webp"><img src="img/gallery-img5.jpg.webp" alt="Gallery Image"></a></div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-      <div class="bearr-gallery-item"><a href="img/gallery-img6.jpg.webp"><img src="img/gallery-img6.jpg.webp" alt="Gallery Image"></a></div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-      <div class="bearr-gallery-item"><a href="img/gallery-img7.jpg.webp"><img src="img/gallery-img7.jpg.webp" alt="Gallery Image"></a></div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-6 no-space">
-      <div class="bearr-gallery-item"><a href="img/gallery-img8.jpg.webp"><img src="img/gallery-img8.jpg.webp" alt="Gallery Image"></a></div>
-    </div>            
-  </div>
-  <!-- /Gallery Images -->
-</div>
-<!-- /Gallery -->
-
-<!-- Gift List -->
-<div class="section section-gift-list" id="gifts">
-  <div class="container">
-
-    <!-- Section Title -->
-    <div class="title-section-wrapper">
-      <!-- Title -->
-      <h2 class="title-section">Gift List</h2>
-      <!-- /title -->
-      <!-- Text -->
-      <div class="owl-carousel-wrapper clients-carousel-wrapper">
-      <p class="text-section">Being able to share this time with family and friends is the best gift we could ask for, and your presence is the most important for us. If you would like to give us something extra, instead of gifts we would really appreciate contributions to our savings for the future house. In Italy, it is customary to give money inside an envelope to the spouses on the wedding date. We will leave an envelope and a box where guests can give the quantity that fits in their pocket :)</p>
-      <p align=center><img src='img/client2.png.webp' alt='gift image'></img></p>
-      <!-- /text -->
-    </div>
-    <!-- /Section Title -->
-
-    <!-- Gift list -->
-      </div>
-    </div>
-    <!-- /Gift list -->
-  </div>
-</div>
-<!-- /Gift List -->
-
-<!-- Blog -->
-<div class="section section-blog with-bg" id="blog">
-  <div class="container">
-
-    <!-- Section Title -->
-    <div class="title-section-wrapper">
-      <!-- Title -->
-      <h2 class="title-section">Some more information about us.</h2>
-      <!-- /title -->
-    </div>
-    <!-- /Section Title -->
-    <!-- Blogroll  -->
-    <div class="owl-carousel-wrapper blogroll-carousel-wrapper">
-      <div class="owl-carousel blogroll-carousel owl-theme owl-loaded">
-        <!-- item -->
-        <div class="blog-item">
-          <!-- <a href="single.html"> -->
-            <figure class="blog-item-img blog-item-img-cover" style=" background-image: url(img/img1-1.jpg)"></figure>
-          <!-- </a> -->
-          <div class="blog-content">
-            <article class="post">
-              <h3 class="heading">What to do in Italy?</h3>
-              <p>We share some ideas of what to do in Naples and Rome in Italy.</p>
-              <a href="https://docs.google.com/spreadsheets/d/1tVdt5bPQ59ge0jXxWCIGw2h_Z-E1Lo3Rsi7PLJw_BhQ/edit#gid=0" class="primary-btn">Click here!</a>
-            </article>
-          </div>
-        </div>
-        <!-- /item -->
-
-        <!-- item -->
-        <div class="blog-item">
-          <!-- <a href="single.html"> -->
-            <figure class="blog-item-img blog-item-img-cover" style=" background-image: url(img/img1-2.jpg)"></figure>
-          <!-- </a> -->
-          <div class="blog-content">
-            <article class="post">
-              <h3 class="heading">He popped the question</h3>
-              <p> Amanda spent the entire day getting ready and planning her prom, speech to go accordingly. Little did she expect that her other half had something planned for her as well.</p>
-              <!-- <a href="single.html" class="primary-btn">See More</a> -->
-            </article>
-          </div>
-        </div>
-        <!-- /item -->
-        
-        <!-- item -->                                
-        <div class="blog-item">
-          <!-- <a href="single.html"> -->
-            <figure class="blog-item-img blog-item-img-cover" style=" background-image: url(img/img1-3.jpg)"></figure>
-          <!-- </a> -->
-          <div class="blog-content">
-            <article class="post">
-              <h3 class="heading">Big day is almost here</h3>
-              <p>We will get married and are so excited to have you come from different parts of the world to share this special day with us in Italy. We are very sure you are going to enjoy the weather and the food.</p>
-              <!-- <a href="single.html" class="primary-btn">See More</a> -->
-            </article>
-          </div>
-        </div>
-        <!-- /item --> 
-
-        <!-- item -->
-      <!--   <div class="blog-item">
+            <!-- item -->
+            <!--   <div class="blog-item">
           <a href="single.html">
             <figure class="blog-item-img blog-item-img-cover" style=" background-image: url(img/img7.jpg)"></figure>
           </a>
@@ -619,10 +704,10 @@
             </article>
           </div>
         </div> -->
-        <!-- /item -->
+            <!-- /item -->
 
-        <!-- Item -->                                
-    <!--     <div class="blog-item">
+            <!-- Item -->
+            <!--     <div class="blog-item">
           <a href="single.html">
             <figure class="blog-item-img"></figure>
           </a>
@@ -634,10 +719,10 @@
             </article>
           </div>
         </div> -->
-        <!-- /item -->
+            <!-- /item -->
 
-        <!-- Item -->                                
-       <!--  <div class="blog-item">
+            <!-- Item -->
+            <!--  <div class="blog-item">
           <a href="single.html">
             <figure class="blog-item-img blog-item-img-cover" style=" background-image: url(img/img8.jpg)"></figure>
           </a>
@@ -648,11 +733,11 @@
               <a href="single.html" class="primary-btn">See More</a>
             </article>
           </div> -->
-        </div>
-        <!-- /item -->
+          </div>
+          <!-- /item -->
 
-        <!-- item -->                                
-        <!-- <div class="blog-item">
+          <!-- item -->
+          <!-- <div class="blog-item">
           <a href="single.html">
             <figure class="blog-item-img"></figure>
           </a>
@@ -664,10 +749,10 @@
             </article>
           </div>
         </div> -->
-        <!-- /item -->
+          <!-- /item -->
 
-        <!-- item -->                                
-        <!-- <div class="blog-item">
+          <!-- item -->
+          <!-- <div class="blog-item">
           <a href="single.html">
             <figure class="blog-item-img blog-item-img-cover" style=" background-image: url(img/img9.jpg)"></figure>
           </a>
@@ -679,10 +764,10 @@
             </article>
           </div>
         </div> -->
-        <!-- /item -->
+          <!-- /item -->
 
-        <!-- item -->                                
-       <!--  <div class="blog-item">
+          <!-- item -->
+          <!--  <div class="blog-item">
           <a href="single.html">
             <figure class="blog-item-img blog-item-img-cover" style=" background-image: url(img/img10.jpg)"></figure>
           </a>
@@ -694,25 +779,25 @@
             </article>
           </div>
         </div> -->
-        <!-- /item -->
+          <!-- /item -->
 
+        </div>
       </div>
+      <!-- /Blogroll -->
+
     </div>
-    <!-- /Blogroll -->
+  </div>
+  <!-- /Blog -->
+
 
   </div>
-</div>
-<!-- /Blog -->
-
-
-</div>
-</div>
-<!-- /Main Content    
+  </div>
+  <!-- /Main Content
   ================================================== -->
 
-<!-- Footer
+  <!-- Footer
   ================================================== -->
-  <footer id="colophon" class="site-footer">              
+  <footer id="colophon" class="site-footer">
     <!-- footer bottom -->
     <div class="footer-bottom">
       <div class="container">
@@ -722,7 +807,9 @@
           <div class="col-sm-8">
             <!-- Site Info -->
             <div class="site-quote">
-              <p>“No distance or obstacle could have gotten on our way” - <small>I love you!</small></p>
+              <p>“No distance or obstacle could have gotten on our way” -
+                <small>I love you!</small>
+              </p>
             </div>
             <!-- /Site info -->
           </div>
@@ -732,36 +819,64 @@
             <!-- social icons -->
             <div class="social-icons footer-social-icons">
               <ul class="social-icons-list text-right">
-                <li><a name="facebook" href="http://www.facebook.com/amandawtm" aria-label="facebook" target="_blank" rel="noopener" role="none"><i class="fa fa-facebook"></i></a></li>
-                <li><a name="twitter" href="http://www.twitter.com/chibichibibr" aria-label="twitter" target="_blank" rel="noopener" role="none"><i class="fa fa-twitter"></i></a></li>
-                <li><a name="instagram" href="http://www.instagram.com/chibichibibr" aria-label="instagram" target="_blank" rel="noopener" role="none"><i class="fa fa-instagram"></i></a></li>
-                <li><a name="youtube" href="http://www.youtube.com/chibichibibr" aria-label="youtube" target="_blank" rel="noopener" role="none" ><i class="fa fa-youtube"></i></a></li>
-                <li><a name="gplus" href="https://plus.google.com/+AmandaCCavallaro/" aria-label="gplus" target="_blank" rel="noopener" role="none"><i class="fa fa-google-plus"></i></a></li>
+                <li>
+                  <a name="facebook" href="http://www.facebook.com/amandawtm" aria-label="facebook" target="_blank" rel="noopener"
+                    role="none">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a name="twitter" href="http://www.twitter.com/chibichibibr" aria-label="twitter" target="_blank" rel="noopener"
+                    role="none">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a name="instagram" href="http://www.instagram.com/chibichibibr" aria-label="instagram" target="_blank" rel="noopener"
+                    role="none">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a name="youtube" href="http://www.youtube.com/chibichibibr" aria-label="youtube" target="_blank" rel="noopener"
+                    role="none">
+                    <i class="fa fa-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a name="gplus" href="https://plus.google.com/+AmandaCCavallaro/" aria-label="gplus" target="_blank" rel="noopener"
+                    role="none">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
               </ul>
             </div>
-            <!-- /social icons -->    
+            <!-- /social icons -->
           </div>
           <!-- /col -->
         </div>
-        <!-- /row -->               
+        <!-- /row -->
       </div>
     </div>
-    <!-- /footer bottom -->     
+    <!-- /footer bottom -->
   </footer>
-<!-- /Footer    
+  <!-- /Footer
   ================================================== -->
 
   <!-- Back to Top Button -->
-  <div id="back-to-top" class="back-to-top back-to-top-hide"><i class="fa fa-angle-up"></i></div>
+  <div id="back-to-top" class="back-to-top back-to-top-hide">
+    <i class="fa fa-angle-up"></i>
+  </div>
   <!-- /Back to Top Button -->
 
-<!-- Contact Form - Ajax Messages
+  <!-- Contact Form - Ajax Messages
   ========================================================= -->
   <!-- Form Sucess -->
   <div class="form-result modal-wrap" id="contactSuccess">
     <div class="modal-bg"></div>
     <div class="modal-content">
-      <h4 class="modal-title"><i class="fa fa-check-circle"></i> Success!</h4>
+      <h4 class="modal-title">
+        <i class="fa fa-check-circle"></i> Success!</h4>
       <p>Your message has been sent to us.</p>
     </div>
   </div>
@@ -770,7 +885,8 @@
   <div class="form-result modal-wrap" id="contactError">
     <div class="modal-bg"></div>
     <div class="modal-content">
-      <h4 class="modal-title"><i class="fa fa-times"></i> Error</h4>
+      <h4 class="modal-title">
+        <i class="fa fa-times"></i> Error</h4>
       <p>There was an error sending your message.</p>
     </div>
   </div>
@@ -778,17 +894,17 @@
   <!-- form-sending -->
   <div class="form-result modal-wrap" id="contactWait">
     <div class="modal-bg"></div>
-    <div class="modal-content">  
-      <div class="modal-loader"></div> 
+    <div class="modal-content">
+      <div class="modal-loader"></div>
       <p>Sending Message, please wait...</p>
     </div>
   </div>
   <!-- /form-sending -->
-<!-- / Contact Form - Ajax Messages
+  <!-- / Contact Form - Ajax Messages
   ========================================================= -->
 
 
-<!-- >> JS
+  <!-- >> JS
   ============================================================================== -->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="vendor/jquery-1.12.4.min.js"></script>
@@ -816,11 +932,11 @@
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
 <script src="vendor/html5shiv.js"></script>
 <script src="vendor/respond.min.js"></script>
 <![endif]-->
-<!-- >> /JS
+  <!-- >> /JS
   ============================================================================= -->
 </body>
 
