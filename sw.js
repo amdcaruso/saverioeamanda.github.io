@@ -1,15 +1,15 @@
-var staticCacheName = 'wedding-static-v2';
+var staticCacheName = 'wedding-static-v1';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(staticCacheName).then(function(cache) {
       return cache.addAll([
         '/',
+        'favicon2.ico',
         './css/styles.css',
         './js/main.js',
-        './index.html',
-        './restaurant.html',
-        './pt.html'
+        'index.html',
+        'pt.html'
       ]);
     })
   );

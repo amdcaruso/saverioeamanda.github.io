@@ -4,16 +4,18 @@
 
     var windowHeight = $(window).height();
 
-    var language = navigator.language || navigator.browserLanguage;
-    
-    function checksLanguage(language) {
-        if (language.indexOf('en') > -1) {
-            window.location.href = 'http://www.saverioeamanda/';
-        } else {
-            window.location.href = 'http://saverioeamanda.com/pt.html';
-        }
-    }
-    
+    window.innerWidth === window.outerWidth;
+
+    // var language = navigator.language || navigator.browserLanguage;
+
+    // function checksLanguage(language) {
+    //     if (language.indexOf('en') > -1) {
+    //         window.location.href = 'http://www.saverioeamanda/';
+    //     } else {
+    //         window.location.href = 'http://saverioeamanda.com/pt.html';
+    //     }
+    // }
+
     function adjustViewport() {
         windowHeight = $(window).height();
         $('.viewport').css('min-height', windowHeight);
@@ -27,30 +29,30 @@
     }
 
     $('.loading-wrapper').css({'visibility': 'visible'}).animate({opacity: '1'}, 600);
-       
+
     //Begin - Window Load
-    $(window).on("load", function () {    
+    $(window).on("load", function () {
 
         //loader and Intro Animations
-        $('#page-loader').delay(100).fadeOut(50, function(){});    
+        $('#page-loader').delay(100).fadeOut(50, function(){});
 
         // Calling functions here
         adjustViewport();
         AdjustingBannerSpacing();
     });
 
-    //Runs on window Resize
-    $(window).on("resize", function () {
-        adjustViewport();
-    });
+    // //Runs on window Resize
+    // $(window).on("resize", function () {
+    //     adjustViewport();
+    // });
 
     //Begin - Document Ready
-    $(document).on("ready", function () {    
-        
+    $(document).on("ready", function () {
+
         $('.touchelement').bind({'touchstart':function(e){
             console.info(e.originalEvent.touches[0]);
           }});
-          
+
         // //WAYPOINTS
         $('#content').waypoint(function (direction) {
             if (direction === 'down') {
@@ -64,11 +66,11 @@
             offset: '-20px'
         });
 
-        //Bootstrap menu on hover 
+        //Bootstrap menu on hover
         $('.dropdown').on('mouseenter', function () {
             $(this).addClass('open');
             return false;
-        }); 
+        });
 
         $('.dropdown').on('mouseleave', function () {
             $(this).removeClass('open');
@@ -81,7 +83,7 @@
                 scrollTop: 0
             }, 700);
             return false;
-        });        
+        });
 
         //Anchor Smooth Scroll
         $('a[href*="#"]:not([href="#"])').on('click', function ()  {
@@ -97,7 +99,7 @@
             }
         });
 
-        // Mobile Menu Js      
+        // Mobile Menu Js
         $("#MobileMenu").on("click", function () {
             var HeaderHeight = $("#header").outerHeight();
             $(this).toggleClass("menu-clicked");
@@ -115,22 +117,22 @@
             $('.slide-icon').addClass('active');
             $('.slide-text').addClass('active');
             $('.featured-slide .primary-btn').addClass('active');
-        }); 
-        
+        });
+
         mainSlider.owlCarousel({
             items: 1,
             nav: true,
             loop: false
         });
 
-        mainSlider.on('changed.owl.carousel', function(e){          
+        mainSlider.on('changed.owl.carousel', function(e){
             $('.slide-title').removeClass('active');
             $('.slide-icon').removeClass('active');
             $('.slide-text').removeClass('active');
-            $('.featured-slide .primary-btn').removeClass('active');    
+            $('.featured-slide .primary-btn').removeClass('active');
             return false;
         });
-         
+
 
         mainSlider.on('translated.owl.carousel', function(e){
             $('.slide-title').addClass('active');
@@ -138,7 +140,7 @@
             $('.slide-text').addClass('active');
             $('.featured-slide .primary-btn').addClass('active');
             return false;
-        });    
+        });
 
         //=====>  Countdown (Edit this with your own date)  <====
         $("#bearr-countdown-item").countdown( "2018/09/07 16:00:00" , function (event) {
@@ -148,18 +150,18 @@
         //Testimonials
          $(".testimonial-carousel").owlCarousel({
             items: 1,
-            nav: false,         
+            nav: false,
         });
 
         // Gallery Fancybox
-        $(".bearr-gallery-item a").simpleLightbox();   
+        $(".bearr-gallery-item a").simpleLightbox();
 
         //Git List
         $(".clients-carousel").owlCarousel({
             items: 3,
             nav: false,
             margin: 20
-        });  
+        });
 
         //Blogroll
         $(".blogroll-carousel").owlCarousel({
@@ -174,7 +176,7 @@
                    items: 3,
                 }
             }
-        });    
+        });
 
         //Post Format: Gallery
         $('.gallery-featured-carousel').owlCarousel({
@@ -187,8 +189,8 @@
                 //remove class active
                 this.$owlItems.removeClass('active');
                 //add class active
-                this.$owlItems.eq(this.currentItem).addClass('active');    
-            }       
+                this.$owlItems.eq(this.currentItem).addClass('active');
+            }
         })
 
         //Contact Form
@@ -204,7 +206,7 @@
         var modalWrap = $('.modal-wrap');
         modalWrap.on('click', function () {
           modalWrap.fadeOut(300);
-        }); 
+        });
 
         //Modal for Forms
         function hideModal() {
@@ -214,11 +216,11 @@
 
         modalWrap.on('click', function () {
           hideModal();
-        });   
+        });
 
         modalWrap.on('click', function () {
           hideModal();
-        }); 
+        });
         //End - Document Ready
     });
 
