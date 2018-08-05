@@ -35,9 +35,9 @@
   //Begin - Window Load
   $(window).on("load", function() {
     //loader and Intro Animations
-    $("#page-loader")
-      .delay(60)
-      .fadeOut(50, function() {});
+    // $("#page-loader")
+    //   .delay(60)
+    //   .fadeOut(50, function() {});
 
     // Calling functions here
     adjustViewport();
