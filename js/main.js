@@ -28,21 +28,21 @@
     $(".main-carousel .slide-inner").css("padding-top", HeaderHeight);
   }
 
-  $(".loading-wrapper")
-    .css({ visibility: "visible" })
-    .animate({ opacity: "1" }, 400);
+  $(".loading-wrapper");
+  // .css({ visibility: "visible" })
+  // .animate({ opacity: "1" }, 400);
 
   //Begin - Window Load
-  $(window).on("load", function() {
-    //loader and Intro Animations
-    // $("#page-loader")
-    //   .delay(60)
-    //   .fadeOut(50, function() {});
+  //   $(window).on("load", function() {
+  //loader and Intro Animations
+  // $("#page-loader")
+  //   .delay(60)
+  //   .fadeOut(50, function() {});
 
-    // Calling functions here
-    adjustViewport();
-    AdjustingBannerSpacing();
-  });
+  // Calling functions here
+  // adjustViewport();
+  // AdjustingBannerSpacing();
+  //   });
 
   // //Runs on window Resize
   // $(window).on("resize", function () {
@@ -110,8 +110,8 @@
           $("html, body").animate(
             {
               scrollTop: target.offset().top
-            },
-            1000
+            }
+            // 1000
           );
           return false;
         }
@@ -172,7 +172,7 @@
       var $this = $(this).html(
         event.strftime(
           "" +
-            '<div class="countdown-col"><span class="countdown-time"> %-D </span> <span class="countdown-type"> Days </span></div> ' +
+            '<div class="countdown-col"><span class="countdown-time"> %-D </span> <span class="countdown-type">Days </span></div> ' +
             '<div class="countdown-col"><span class="countdown-time"> %H </span> <span class="countdown-type">Hours </span></div>' +
             '<div class="countdown-col"><span class="countdown-time"> %M </span> <span class="countdown-type">Minutes </span></div>' +
             '<div class="countdown-col"><span class="countdown-time"> %S </span> <span class="countdown-type">Seconds </span></div>'
@@ -225,27 +225,6 @@
         this.$owlItems.eq(this.currentItem).addClass("active");
       }
     });
-
-    //Modal for Contact Form
-    // var modalWrap = $('.modal-wrap');
-    // modalWrap.on('click', function () {
-    //   modalWrap.fadeOut(300);
-    // });
-
-    //Modal for Forms
-    // function hideModal() {
-    //   modalWrap.fadeOut(300);
-    //   return false;
-    // }
-
-    // modalWrap.on('click', function () {
-    //   hideModal();
-    // });
-
-    // modalWrap.on('click', function () {
-    //   hideModal();
-    // });
-    //End - Document Ready
   });
 
   //End - Use Strict mode
