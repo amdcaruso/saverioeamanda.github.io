@@ -7,6 +7,6 @@
         {
           "src": "favicon2.ico",
           "type": "image/png",
-          "sizes": "16x16"
+          "sizes": "16x16 192x192 512x512"
         }]
   }
